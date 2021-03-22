@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+
+<component name="org.nuxeo.ecm.operation.automationkernelexecutor.contextContrib" version="1.0">
+
+  <require>org.nuxeo.ecm.core.automation.scripting.contextContrib</require>
+
+  <extension target="org.nuxeo.ecm.core.operation.OperationServiceComponent"
+             point="contextHelpers">
+    <contextHelper id="Console" class="org.nuxeo.ecm.automation.interactive.helpers.NoteBookConsole"/>
+    <contextHelper id="Assert" class="org.nuxeo.ecm.automation.interactive.helpers.AssertHelper"/>
+    <contextHelper id="Debug" class="org.nuxeo.ecm.automation.interactive.helpers.InteractiveScriptDebug"/>
+
+  </extension>
+
+</component>

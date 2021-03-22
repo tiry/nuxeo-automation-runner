@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<component name="org.nuxeo.ecm.operation.nb-test-contrib" version="1.0">
+
+  <extension target="org.nuxeo.ecm.automation.notebook.AutomationNotebookComponent"
+             point="notebooks">
+    <automationNotebook name="testNB" src="nb/TestingAutomation.ipynb"/>
+    <automationNotebook name="testNBErr" src="nb/TestingAutomationWithError.ipynb"/>
+    <automationNotebook name="testNBFail" src="nb/TestingAutomationWithFailure.ipynb"/>
+    <automationNotebook name="testNBListener" src="nb/Listeners.ipynb"/>
+
+  </extension>
+
+</component>
